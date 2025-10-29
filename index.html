@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirecionando...</title>
+    <script>
+        // Configura o link de destino//
+        const destino = "https://apps.powerapps.com/play/e/f5de3de0-9849-e7c5-9bdc-d2505120ff40/a/1291b69d-6708-4132-a650-1b54701c4ecf?tenantId=6848fe16-e29a-4cd4-81d0-76ed09ed478a&hint=6d7ea22f-2b50-4c52-af00-86104cc97c59&sourcetime=1761063164393&source=portal&hidenavbar=true";
+
+        // Redireciona após 1 segundo (opcional, só para dar tempo da mensagem aparecer)
+        setTimeout(() => {
+            window.location.href = destino;
+        }, 1000);
+    </script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #0f172a;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        a {
+            color: #38bdf8;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Redirecionando...</h1>
+        <p>Se não fores redirecionado automaticamente, <a id="link" href="#">clica aqui</a>.</p>
+    </div>
+
+    <script>
+        // Atualiza o link de fallback
+        document.getElementById("link").href = destino;
+    </script>
+</body>
+
+</html>
